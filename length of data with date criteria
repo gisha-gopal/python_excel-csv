@@ -1,0 +1,8 @@
+import pandas as pd
+
+df = pd.read_csv('filename.csv')
+
+df = df[df["ID"] == 1234]
+df_1 = df[df["Date"].str.startswith('9/30/2021')]
+#df_1.to_excel('copy.xlsx')
+len(df_1)
